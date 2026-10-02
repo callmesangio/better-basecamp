@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Better Basecamp",
+  "version": "1.0.0",
+  "description": "Removes the Basecamp layout wallpaper.",
+  "content_scripts": [
+    {
+      "matches": ["https://*.basecamp.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
